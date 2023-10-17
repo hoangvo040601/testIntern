@@ -1,0 +1,14 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    // padding-top:90px;
+    .footer {
+        position: absolute;
+        bottom: 0;
+        top: 150px;
+        left: 150px;
+        height: 79px;
+    }
+}

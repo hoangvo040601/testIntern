@@ -1,0 +1,19 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .app-sidebar {
+        width: 150px;
+    }
+
+    .app-content {
+        width: 1768px;
+    }
+}

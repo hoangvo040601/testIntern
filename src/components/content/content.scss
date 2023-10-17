@@ -1,0 +1,94 @@
+.content-container {
+    font-family: 'Roboto';
+    // width: 100%;
+    background-color: #fff;
+    padding: 0 150px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .content-logo {
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 310px;
+            height: 122px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .content-text {
+
+        // padding: 0 150px;
+        .text-background {
+            // width: 1510px;
+
+            background-color: #efefef;
+            // width: 100%;
+            height: 100%;
+            padding: 32px 300px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 18.75px;
+
+            .text-header {
+                font-weight: 700;
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .content-item {
+        ul {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 32px 0px;
+            list-style-type: none;
+            // width: 1510px;
+            width: 100%;
+            // height: 210px;
+            height: 100%;
+            margin: auto;
+
+            li {
+                // width: 470px;
+                width: 100%;
+                height: 100%;
+
+                &:nth-child(2) {
+                    padding: 0 32px;
+                }
+
+                // margin: 0 32px;
+                .item-title {
+                    padding-bottom: 14px;
+                    text-align: left;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 18.75px;
+                }
+
+                .item-header {
+                    display: flex;
+                    text-align: left;
+
+                    .item-logo {
+                        width: 128px;
+                        height: 100%;
+                    }
+                }
+
+                .item-footer {
+                    text-align: left;
+
+                }
+            }
+        }
+    }
+}
