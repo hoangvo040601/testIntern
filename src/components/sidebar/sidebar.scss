@@ -7,6 +7,7 @@
     ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
             position: relative;
             padding: 10px 10px;
@@ -22,6 +23,7 @@
                 margin: 0;
 
             }
+
             .cusor {
                 position: absolute;
                 right: 10px;
@@ -31,7 +33,39 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 768px) {
+    .sideBar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        ul {
+            display: none;
+        }
 
+        .sideBar-container:hover ul {
+            display: block;
+        }
+    }
+
+    .sideBar-container ul li {
+        display: none;
+    }
+
+    .sideBar-container ul li.show {
+        display: block;
+    }
+
+    .sideBar-container ul li a {
+        display: block;
+        padding: 10px 15px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #5c5c5c;
+        }
+    }
 }
